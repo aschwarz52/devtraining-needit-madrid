@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Request Reasons" max_length="40" name="x_58872_needit_request_reasons" type="collection">
+        <element label="Request Reasons" max_length="250" name="request_reasons" type="string"/>
+    </element>
+</database>

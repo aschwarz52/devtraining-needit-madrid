@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="2" label="Requested for" mandatory="true" max_length="40" name="requested_for" reference="x_58872_needit_request_reasons" type="reference">
+            <choice>
+                <element inactive_on_update="false" label="Reason 17" value="Reason 17"/>
+            </choice>
+        </element>
+        <element choice="1" default="Legal" label="Request Type" mandatory="true" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
+                <element inactive_on_update="false" label="Facilities" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" value="legal"/>
+                <element inactive_on_update="false" label="Technology" value="technology"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="100" value="hr"/>
+            </choice>
+        </element>
+        <element display="true" label="When Needed" mandatory="true" max_length="40" name="test_date_time_field" type="glide_date_time"/>
+        <element choice="3" default="Legal 1" label="What Needed" max_length="40" name="what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities 1" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities 2" value="facilities2"/>
+                <element inactive_on_update="false" label="Human Resources 1" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" value="hr2"/>
+                <element inactive_on_update="false" label="Legal 1" value="legal1"/>
+                <element inactive_on_update="false" label="Legal 2" value="legal2"/>
+                <element inactive_on_update="false" label="Technology 1" value="technology1"/>
+                <element inactive_on_update="false" label="Technology 2" value="technology2"/>
+            </choice>
+        </element>
+    </element>
+</database>
